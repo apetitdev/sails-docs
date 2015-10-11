@@ -22,7 +22,7 @@ Then use it in one of your controllers:
       bucket: 'Bucket Name'
     }, function (err, filesUploaded) {
       if (err) return res.negotiate(err);
-      return res.ok({
+      return res.ok({ 
         files: filesUploaded,
         textParams: req.params.all()
       });
@@ -31,3 +31,4 @@ Then use it in one of your controllers:
 ```
 
 <docmeta name="displayName" value="Uploading to S3">
+<i> Add the s3 regsion</p>
